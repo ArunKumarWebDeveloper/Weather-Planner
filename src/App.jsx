@@ -1,5 +1,4 @@
-import WeatherCard from './Components/Weather'
-import Planner from './Components/Planner'  
+import WeatherPlannerPage from "./Components/Weather"
 import './App.css'
 import Navbar from './Components/Navbar'
 
@@ -9,8 +8,7 @@ function App() {
   return (
     <> 
     <Navbar />
-     <WeatherCard />
-      <Planner />
+      <WeatherPlannerPage />
 
     </>
   )
