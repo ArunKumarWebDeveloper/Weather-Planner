@@ -127,7 +127,7 @@ const Planner = () => {
           onKeyDown={(e) => e.key === "Enter" && addOrUpdate()}
         />
         <button className="add-btn" onClick={addOrUpdate}>
-          {editId ? "✓" : "+"}
+          {editId ? "Done" : "Add"}
         </button>
       </div>
 

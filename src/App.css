@@ -14,7 +14,7 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 2rem;
   height: 60px;
   background: linear-gradient(90deg, #b7e3ff, #ffffff);
@@ -114,7 +114,7 @@ body {
 
 .city-name {
   font-size: 2.5rem;
-  color: #101010;
+  color: #ffffff;
   margin-bottom: 10px;
  
   border-radius: 12px;
@@ -141,8 +141,8 @@ body {
 /* Input box */
 .weather-card input  {
   justify-content: center;
-  align-items: center;
   padding: 10px 15px;
+  font-weight: 700;
   font-size: 1rem;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -178,6 +178,8 @@ body {
 /* Weather details */
 .weather-card {
   background: url("/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -187,7 +189,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .weather-details {
-  background-image:url("/back.jpg") ;
+  background:#e0eafe;
   border-radius: 15px;
   padding: 20px;
   margin-top: 20px;
@@ -225,15 +227,25 @@ body {
 .planner-card {
   display: flex;
   flex-direction: column;
-  background: url("/plan11.jpg");
-  object-fit: cover;
+  background-image: url("/plan11.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .brand {
+  display: flex;
+  transform: translate(300%,-10%);
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 15px;
-  color: rgb(255, 106, 0);
+  color: rgb(0, 221, 255);
+  background-color: #d5f5f7;
+  border-radius: 15px;
+  padding: 15px;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
 }
 
 .status-card {
