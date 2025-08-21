@@ -8,7 +8,7 @@ const Navbar = () => {
                <img class ="img2"src="/plan.png" ></img>  
                    
             </div>
-            <p>Weather + Planner</p>
+        
         </nav>
     );
 };

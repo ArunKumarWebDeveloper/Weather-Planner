@@ -17,7 +17,7 @@ body {
   justify-content: center;
   padding: 0 2rem;
   height: 60px;
-  background: linear-gradient(90deg, #b7e3ff, #ffffff);
+  background: linear-gradient(90deg, #0554dd, #1deefd);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   position: sticky;
   top: 0;
@@ -83,8 +83,8 @@ body {
 /* Main wrapper for side-by-side layout */
 .container {
   display: flex;
-  background: url("/plan1.jpg");
-  object-fit: cover;
+  background: url("/public/mainback.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   gap: 40px;
   justify-content: center;
@@ -113,18 +113,24 @@ body {
 }
 
 .city-name {
-  font-size: 2.5rem;
-  color: #ffffff;
+  font-size: 2.8rem;
+  color: hsl(0, 0%, 100%);
   margin-bottom: 10px;
- 
+  backdrop-filter: blur(10px);
   border-radius: 12px;
+  width: 50%;
+  margin-left: 25%;
 }
 
 /* Weather type */
 .weather-type {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #ffffff;
   margin-bottom: 10px;
+    backdrop-filter: blur(10px);
+    width: 50%;
+    margin-left: 25%;
+    font-weight: 700;
 }
 
 /* Weather icon */
@@ -134,7 +140,7 @@ body {
   margin-bottom: 20px;
   justify-content: center;
   align-items: center;
-  margin-left: 110px;
+  margin-left: 40%;
   
 }
 
@@ -149,7 +155,7 @@ body {
   width: 70%;
   background: #ebfffc;
   margin-bottom: 15px;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 .city-input{
   background-color: #ffffff; 
@@ -164,9 +170,9 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  max-width: 100px;
+  max-width: 120px;
   transition: background 0.3s;
-  margin-left: 115px;
+  margin-left: 40%;
 }
 
 .search-btn:hover {
@@ -177,19 +183,19 @@ body {
 
 /* Weather details */
 .weather-card {
-  background: url("/back.jpg");
+  background: url("/back (2).jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
+  max-width: 800px;
   width: 100%;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .weather-details {
-  background:#e0eafe;
+  backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 20px;
   margin-top: 20px;
@@ -235,15 +241,14 @@ body {
 
 .brand {
   display: flex;
-  transform: translate(300%,-10%);
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 15px;
-  color: rgb(0, 221, 255);
-  background-color: #d5f5f7;
+  color: white;
+  background-color: rgb(0, 221, 255);
   border-radius: 15px;
   padding: 15px;
-  width: fit-content;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
