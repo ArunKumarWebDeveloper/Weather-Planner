@@ -10,11 +10,11 @@ export async function fetchWeather(city) {
   const response = await axios.get(`${BASE_URL}/weather`, {
     params: {
       q: city,
-      units: 'metric',
+      units: 'metric', // Celsius
       appid: API_KEY,
     },
   });
-    console.log("⚙️ [weatherAPI] response:", response.data);
+  console.log("⚙️ [weatherAPI] response:", response.data);
 
   return response.data;
 }

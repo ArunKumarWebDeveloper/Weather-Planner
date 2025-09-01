@@ -5,6 +5,7 @@
 }
 
 html{
+  font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
    scroll-behavior: smooth;
    transition: all 0.3s ease-in-out ;
 }
@@ -67,30 +68,335 @@ html{
 }
 
 .navbar p img{
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    width: 10px;
     margin-left: 2px;
 }
 
-.weather-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 1px 5px 28px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    height: 100vh;
+/* General page style */
+.weather-container {
+  height: 95vh;
+  background: linear-gradient(to bottom right, #62bacc, #c0b2ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  border-radius: 15px;
 }
 
-.planner{
-    display: flex;
-    margin-top: 10px;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 1px 5px 28px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    height: 95vh;
+.weather-container h2 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  right: 40%;
+}
+/* Search bar */
+.search-bar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  left: 35%;
+  transform: translate(-0%,-110%);
 }
 
+.search-bar input {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  font-size: 14px;
+  width: 250px;
+  text-align: center;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+  
+}
+
+.search-bar button:hover {
+  background: #5848d4;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Weather card */
+.weather-card {
+  background: url("../public/back.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 50px;
+  width: 100%;
+  height: 800px;
+  max-width: 1200px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+/* Header (temp + city) */
+.weather-header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.weather-header h1 {
+  font-size: 72px;
+  margin: 0;
+}
+
+.weather-header .location {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.weather-header .coords {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Details grid */
+.weather-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.weather-details div {
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.weather-details span {
+  color: black;
+  display: block;
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+
+.weather-details strong {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.weather-details span img{
+  height: 20px;
+  width: 20px;
+  margin: 2px;
+}
+
+.weather-condition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  width: auto;
+  padding: 12px;
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.weather-condition img{
+  height: 80px;
+  width: 80px;
+  margin: 0 10px;
+}
+.weather-condition h3 {
+  margin: 0;
+  font-size: 225x;
+  font-weight: 800;
+  color: #222;
+}
+
+.weather-condition p {
+  margin: 2px 0 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+
+/*Todo-list*/
+#planner{
+  background-color: #e3fcff;
+  border-radius: 15px;
+ width: 100%;
+}
+
+.todo-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 50px;
+  color: #f5f5f5;
+  font-weight: 600;
+  text-align: left;
+}
+.logo span {
+  color: #ff432d;
+}
+
+.status-card {
+  background: #3f3f3f;
+  border: 1px solid #555;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.status-card h2 {
+  font-size: 25px;
+  color: #f5f5f5;
+}
+.status-card p {
+  margin: 10px;
+  font-size: 15px;
+  color: #ffffff;
+}
+.status-circle {
+  background: #ff432d;
+  color: #fff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.input-section {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.input-section input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #3a3939;
+  color: #f5f5f5;
+}
+.input-section input::placeholder {
+  color: #ffffff;
+}
+.input-section button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background: #ff432d;
+  color: #fff;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #363535;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+}
+
+.task-check {
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.task-text {
+  flex: 1;
+  font-size: 16px;
+  color: #f5f5f5;
+}
+.task-text.done {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+.task-actions button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #f5f5f5;
+}
+.task-actions .delete {
+  color: #ff432d;
+}
+
+.edit-section {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+}
+.edit-input {
+  flex: 1;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #666;
+  background: #1a1a1a;
+  color: #fff;
+}
+.save {
+  background: #16c60c;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+}
+.cancel {
+  background: #ff432d;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+}
 
 /* Responsive: stack on smaller screens */
 @media (max-width: 768px) {
