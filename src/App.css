@@ -12,7 +12,7 @@ html{
 
 .layout {
   display: grid;
-  grid-template-columns: 100px 1fr; /* Navbar fixed width, Weather expands */
+  grid-template-columns: 90px 1fr; /* Navbar fixed width, Weather expands */
   height: 100vh;
 }
 

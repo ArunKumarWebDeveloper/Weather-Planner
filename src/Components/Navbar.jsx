@@ -10,7 +10,7 @@ const Navbar = () => {
                <a href="#planner"><img class ="img2"src="/plan.png" ></img></a>
 
             </div>
-            <p>Rights Reserved<img src='./copy.png' className="copy-icon"></img></p>
+
         </nav>
         </div>
     );
