@@ -56,8 +56,9 @@ function TodoList() {
 
       <div className="status-card">
         <div>
-          <h2>Todo Done</h2>
-          <p>keep it up</p>
+          <h2>Todo-list</h2>
+          <p>"The only limit between you and your dreams is the action you’re willing to take."
+             "Plan Now" </p>
         </div>
         <div className="status-circle">
           {doneCount}/{tasks.length}
