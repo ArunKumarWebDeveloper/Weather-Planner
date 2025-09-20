@@ -7,7 +7,7 @@
 html{
   font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
    scroll-behavior: smooth;
-   transition: all 0.5s ease-in-out ;
+   transition: all 0.3s ease-in-out ;
 }
 
 .layout {
@@ -76,7 +76,7 @@ html{
 
 nav img:hover {
    transform: scale(1.2);
-   transition: all 0.3ms ease-in-out;
+   transition: all 0.3s ease-in-out;
 }
 
 
@@ -312,6 +312,10 @@ nav img:hover {
   font-size: 22px;
   font-weight: bold;
 }
+.status-circle:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
 
 .input-section {
   display: flex;
@@ -340,6 +344,11 @@ nav img:hover {
   color: #fff;
   font-size: 21px;
   cursor: pointer;
+}
+
+.input-section button:hover{
+  transform: scale(1.01);
+  transition: all 0.4s ease-in;
 }
 
 .task-list {
